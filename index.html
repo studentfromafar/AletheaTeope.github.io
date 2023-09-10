@@ -5,7 +5,7 @@
 <title>Student</title>
 </head>
 <body>
-<h1>Hi I am nickname</h1>
+<h1>Hi I am Alethea Teope</h1>
 <img src="images/2x2.png" alt="picture" width="160" height="170"> <br>
 <p class="centered-text">Alethea Frederich M. Teope</p>
 <li>Age: 20</li> <li>Birthday: November 05, 2002</li> <li>Hobbies: Gaming</li> <li>Skills: Programming</li> <li>Address: 41 Katihan St., Poblacion Muntinlupa City </li> <li>Eductional Background: <ul>
@@ -82,16 +82,6 @@ myImage.setAttribute ('src','images/firefox2.png'); } else {
 myImage.setAttribute ('src','images/firefox-icon.png'); }
 }
 let myButton = document.querySelector('button'); let myHeading = document.querySelector('h1');
-function setUserName() {
-let myName = prompt('Please enter your name.'); if(!myName) {
-setUserName(); } else {
-localStorage.setItem('name', myName);
-myHeading.innerHTML = 'Hi I am ' + myName; }
-}
-if(!localStorage.getItem('name')) { setUserName();
-} else {
-let storedName = localStorage.getItem('name'); myHeading.innerHTML = 'Hi I am ' + storedName;
-}
 myButton.onclick = function() {
 setUserName(); }
 </script>
