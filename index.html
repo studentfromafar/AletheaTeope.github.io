@@ -3,6 +3,60 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1"> <link rel="stylesheet" href="style.css">
 <title>Student</title>
+<style> 
+    *{
+    } table{
+    } td,th{
+    } ul{
+    text-indent: 50px; }
+    .btn{
+    padding: 0px;
+    } 
+    .centered-text {
+            text-align: center;
+        }.show-btn{
+    width: 100%; border: none; height: 30px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: arial, sans-serif; border-collapse: collapse; width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid black; padding: 8px; text-align: center;
+    
+     font-weight: bold;
+    font-size: 18px; }
+    .blank{
+    background-color: lightgrey;
+    }
+    .up-btn{
+    font-weight: bold;
+    height: 50px;
+    border-top: 5px solid lightgrey; border-right: 5px solid lightgrey ; margin-bottom: 8px;
+    width: 56.86px;
+    color: white;
+    background-color: rgb(122, 122, 122);
+    }
+    .up-nav th{
+    background-color: lightgrey; }
+    html{
+    background-color: #DAEAF1;
+    } body{
+    width: 480px; margin: 0 auto;
+    background-color: #C6DCE4; padding: 0 10px 10px 10px; border: 30px solid #F5DF99; border-style: inset;
+    list-style-position:inside }
+    img{
+    width: 160px;
+    height: 160px; display: block; margin: 0 auto;
+    } h1{
+    text-align: center; margin: 0; padding: 15px 0;
+    
+     text-shadow: 2px 2px 1px black; color: Pink;
+    font-family: Times New Roman;
+    } 
+</style>
 </head>
 <body>
 <h1>Hi I am Alethea Teope</h1>
@@ -19,69 +73,15 @@
 
  <p>“I am highly organized. I always take notes, and I use a series of tools to help myself stay on top of deadlines. I like to keep a clean workspace and create a logical filing method so I’m always able to find what I need.” </p>
 <br>
-</body> </html>
-<style> 
-*{
-} table{
-} td,th{
-} ul{
-text-indent: 50px; }
-.btn{
-padding: 0px;
-} 
-.centered-text {
-        text-align: center;
-    }.show-btn{
-width: 100%; border: none; height: 30px;
-padding: 0;
-margin: 0;
-box-sizing: border-box;
-font-family: arial, sans-serif; border-collapse: collapse; width: 400px;
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-border: 1px solid black; padding: 8px; text-align: center;
-
- font-weight: bold;
-font-size: 18px; }
-.blank{
-background-color: lightgrey;
-}
-.up-btn{
-font-weight: bold;
-height: 50px;
-border-top: 5px solid lightgrey; border-right: 5px solid lightgrey ; margin-bottom: 8px;
-width: 56.86px;
-color: white;
-background-color: rgb(122, 122, 122);
-}
-.up-nav th{
-background-color: lightgrey; }
-html{
-background-color: #DAEAF1;
-} body{
-width: 480px; margin: 0 auto;
-background-color: #C6DCE4; padding: 0 10px 10px 10px; border: 30px solid #F5DF99; border-style: inset;
-list-style-position:inside }
-img{
-width: 160px;
-height: 160px; display: block; margin: 0 auto;
-} h1{
-text-align: center; margin: 0; padding: 15px 0;
-
- text-shadow: 2px 2px 1px black; color: Pink;
-font-family: Times New Roman;
-} 
-</style>
 <script>
-let myImage = document.querySelector('img');
-myImage.onclick = function() {
-let mySrc = myImage.getAttribute('src'); if(mySrc === 'images/firefox-icon.png') {
-myImage.setAttribute ('src','images/firefox2.png'); } else {
-myImage.setAttribute ('src','images/firefox-icon.png'); }
-}
-let myButton = document.querySelector('button'); let myHeading = document.querySelector('h1');
-myButton.onclick = function() {
-setUserName(); }
+    let myImage = document.querySelector('img');
+    myImage.onclick = function() {
+    let mySrc = myImage.getAttribute('src'); if(mySrc === 'images/firefox-icon.png') {
+    myImage.setAttribute ('src','images/firefox2.png'); } else {
+    myImage.setAttribute ('src','images/firefox-icon.png'); }
+    }
+    let myButton = document.querySelector('button'); let myHeading = document.querySelector('h1');
+    myButton.onclick = function() {
+    setUserName(); }
 </script>
+</body> </html>
